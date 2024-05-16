@@ -1,7 +1,11 @@
-git clone https://github.com/Garret47/PT_Telegram_Bot.git -b ansible
+Execute these commands one by one:
 
-Edit .env, db_hosts, db_master, db_slave (PORT, DB_NAME, USER_NAME, PASSWORD_USER should match .env)
+git clone https://github.com/Garret47/PT_Telegram_Bot.git -b docker
 
-Then execute the command:
+cd PT_Telegram_Bot/
 
-ansible-playbook ansible-playbook.yml
+Edit the .env file, then
+
+sudo docker-compose build
+
+sudo docker-compose up
