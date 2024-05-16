@@ -1,0 +1,16 @@
+- name: "Clone git"
+  git:
+    repo: https://github.com/Garret47/PT_Telegram_Bot.git
+    dest: /home/user/bot/
+    version: bot
+
+- name: "Activate Environment"
+  pip:
+    requirements: /home/user/bot/requirements.txt
+    virtualenv: /home/user/venv
+
+- name: "Copy .env"
+  copy:
+    src: ./.env
+    dest: /home/user/bot/
+

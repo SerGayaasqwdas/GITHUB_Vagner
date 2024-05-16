@@ -1,0 +1,11 @@
+- name: "dada"
+  hosts: db_master
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: "Start Bot"
+      shell:
+        chdir: /home/user/bot
+        cmd: "../venv/bin/python main.py >/dev/null 2>&1 &"
+
