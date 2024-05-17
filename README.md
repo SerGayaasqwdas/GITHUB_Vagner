@@ -1,6 +1,6 @@
 Execute these commands one by one:
 
-git clone https://github.com/Garret47/PT_Telegram_Bot.git -b docker
+git clone https://github.com/SerGayaasqwdas/GITHUB_Vagner.git -b docker
 
 cd GITHUB_Vagner/
 
